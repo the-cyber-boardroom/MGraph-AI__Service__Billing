@@ -1,0 +1,1 @@
+uvicorn mgraph_ai_service_billing.lambdas.handler:app --reload --host 0.0.0.0 --port 10002
