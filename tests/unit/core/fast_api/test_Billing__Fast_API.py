@@ -8,7 +8,7 @@ from mgraph_ai_service_billing.core.fast_api.Billing__Fast_API      import Billi
 from mgraph_ai_service_billing.core.fast_api.routes.Routes__Info    import ROUTES_PATHS__INFO
 from mgraph_ai_service_billing.utils.Version                        import version__mgraph_ai_service_billing
 from mgraph_ai_service_billing.utils.testing.skip_tests             import skip__if_not__in_github_actions
-from testing.billing__objs_for_tests                                import setup__billing_test_api, Billing__Test_APIs
+from tests.billing__objs_for_tests                                  import setup__billing_test_api, Billing__Test_APIs
 
 
 class test_Billing__Fast_API(TestCase):
