@@ -1,5 +1,5 @@
 from fastapi                                                     import FastAPI
-from osbot_utils.helpers.duration.decorators.print_duration import print_duration
+from osbot_utils.helpers.duration.decorators.print_duration      import print_duration
 from osbot_utils.utils.Env                                       import set_env
 from osbot_aws.testing.Temp__Random__AWS_Credentials             import Temp_AWS_Credentials
 from osbot_local_stack.local_stack.Local_Stack                   import Local_Stack

@@ -16,9 +16,13 @@ jobs:
     name: "Run tests"
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4                                                               # Checkout the code in dev branch
+
+      - name: Start Local Stack
+        uses: owasp-sbot/OSBot-GitHub-Actions/.github/actions/docker__local-stack@dev           # start LocalStack in GitHub actions
+
       - name: "run-tests"
-        uses: owasp-sbot/OSBot-GitHub-Actions/.github/actions/pytest__run-tests@dev
+        uses: owasp-sbot/OSBot-GitHub-Actions/.github/actions/pytest__run-tests@dev             # run tests (which use Local Stack)
         with:
           test_target: "tests"
         env:
